@@ -1,19 +1,33 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+   margin: 0px 0px 0px 0px;
+}
 h1 {
-  color: red
+  color: #00FFFF;
 }
 
 #message {
-  color: green
+  color: green;
 }
 
-.test {
-  background-color: blue;
+#header {
+  background-color: #C8C8C8 ;
   height: 100px;
   min-width: 300px;
   max-width: 100%;
-  border: 4px double black
+  border: 4px double black;
+  margin: 100px 150px 0px 20px;
+  h1{
+    color: #F80000 ;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+}
 
+#footer{
+  @extend #header;
+  border-color: red;
+  border-width: 2px;
 }
